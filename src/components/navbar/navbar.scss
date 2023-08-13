@@ -1,0 +1,44 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: teal;
+  color: #fff;
+  height: 70px;
+  width: 100%;
+
+  .left {
+    margin-left: 20px;
+    .link {
+      text-decoration: none;
+      color: #fff;
+
+      &:hover {
+        cursor: pointer;
+      }
+      .logo {
+        font-size: large;
+        font-weight: bold;
+      }
+    }
+  }
+  .right {
+    margin-right: 20px;
+    ul {
+      display: flex;
+      list-style: none;
+      .link {
+        text-decoration: none;
+        color: #fff;
+
+        &:hover {
+          text-decoration: underline;
+        }
+        li {
+          margin-right: 20px;
+          font-size: large;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,35 @@
+.home {
+  h3 {
+    font-size: 24px;
+    margin: 40px 0 20px 0;
+    text-align: center;
+    color: #333;
+  }
+
+  p {
+    font-size: large;
+    text-align: center;
+    color: #333;
+    margin-bottom: 40px;
+  }
+  .features {
+    display: flex;
+    margin: 20px;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    .link {
+      color: #333;
+      text-decoration: none;
+      p {
+        border: 1px solid #ccc;
+        padding: 10px;
+        border-radius: 10px;
+        &:hover {
+          color: gray;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}

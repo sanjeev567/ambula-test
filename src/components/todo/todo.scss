@@ -1,0 +1,106 @@
+.Todo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #333;
+
+  h1 {
+    margin: 20px 0;
+    font-size: bold;
+  }
+  h2 {
+    width: 80%;
+    margin: 20px auto;
+    align-self: flex-start;
+  }
+  .todoList {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+
+    flex-direction: column;
+    gap: 10px;
+    list-style: none;
+    // border: 2px solid;
+    li {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 80%;
+      border: 1px solid #ccc;
+      padding: 5px;
+      border-radius: 6px;
+      color: #333;
+      text-transform: capitalize;
+      .btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+
+        button {
+          background: transparent;
+          border: none;
+          cursor: pointer;
+        }
+        .complete {
+          background: teal;
+          color: white;
+          padding: 5px;
+          border-radius: 5px;
+          &:hover {
+            background: rgb(35, 117, 117);
+          }
+        }
+        .delete {
+          background: rgb(150, 30, 30);
+          color: white;
+          padding: 5px;
+          border-radius: 5px;
+          &:hover {
+            background: rgb(136, 50, 50);
+          }
+        }
+      }
+    }
+  }
+  .todoInfo {
+    display: flex;
+    margin: 40px 0;
+    width: 80%;
+    align-items: center;
+    justify-content: space-between;
+    font-size: large;
+    font-weight: bold;
+    text-transform: capitalize;
+  }
+  .addTodo {
+    width: 50%;
+    display: flex;
+    input {
+      padding: 10px;
+      flex: 3;
+      border-top-left-radius: 5px;
+      border-bottom-left-radius: 5px;
+      border: 1px solid #ccc;
+      outline: none;
+      font-size: large;
+    }
+    button {
+      flex: 1;
+      border: 1px solid #ccc;
+      border-top-right-radius: 5px;
+      border-bottom-right-radius: 5px;
+      color: #fff;
+      background: teal;
+      padding: 10px;
+      cursor: pointer;
+      font-size: large;
+      &:hover {
+        background: rgb(31, 142, 142);
+      }
+    }
+  }
+}

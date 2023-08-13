@@ -1,0 +1,48 @@
+.contact {
+  .contactCart {
+    border: 1px solid #ccc;
+    height: max-content;
+    width: 40%;
+    transform: translate(70%, 30%);
+    padding: 30px;
+    border-radius: 5px;
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      width: 100%;
+
+      input {
+        outline: none;
+        border: 1px solid #ccc;
+        padding: 5px;
+        border-radius: 5px;
+        &:focus {
+          outline: 0.5px solid blue;
+        }
+      }
+      textarea {
+        outline: none;
+        border: 1px solid #ccc;
+        padding: 5px;
+        border-radius: 5px;
+        resize: none;
+
+        &:focus {
+          outline: 0.5px solid blue;
+        }
+      }
+      button {
+        margin: 20px;
+        background: #f4f4f4;
+        padding: 5px;
+        border: 1px solid #ccc;
+        font-size: large;
+        &:hover {
+          background: #f1f1f1;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}

@@ -15,6 +15,7 @@ import Footer from "../footer/Footer";
 
 const WeatherApp = () => {
   const [weatherData, setWeatherData] = useState({});
+  // create a .env file and store your openweather api as VITE_API_KEY = YOUR_API_KEY
   const apiKey = import.meta.env.VITE_API_KEY;
   const [city, setCity] = useState("Pune"); // Default city
 
